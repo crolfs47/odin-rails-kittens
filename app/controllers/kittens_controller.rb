@@ -12,12 +12,12 @@ class KittensController < ApplicationController
   end
 
   def create
-    @kitten = Kitten.new(post_params)
+    @kitten = Kitten.new(kitten_params)
 
     if @kitten.save
       redirect_to kittens_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
