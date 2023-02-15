@@ -3,10 +3,12 @@ class KittensController < ApplicationController
     @kittens = Kitten.all
   end
 
-  def new
+  def show
+    @kitten = Kitten.find(params[:id])
   end
 
-  def show
+  def new
+    @kitten = Kitten.new
   end
 
   def create
@@ -20,4 +22,11 @@ class KittensController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def kitten_params
+    params.require(:kitten).permit(:name, :age)
+  end
+
 end
