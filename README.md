@@ -1,24 +1,24 @@
-# README
+# odin-rails-kittens
+## The Odin Project - Kittens API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Set up a Rails app to be a data-producing API
 
-Things you may want to cover:
+## Features:
+ - 
 
-* Ruby version
+## Languages/Technologies used:
+ - Rails 
+ - Ruby
+ - VS Code
+ - Git/Github
+ - REST APIs
 
-* System dependencies
+## What I learned:
+ - 
+ 
+## Still can improve:
+ - 
 
-* Configuration
+Assignment - https://www.theodinproject.com/lessons/ruby-on-rails-kittens-api
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+View Project  - 
