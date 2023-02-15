@@ -15,8 +15,10 @@ class KittensController < ApplicationController
     @kitten = Kitten.new(kitten_params)
 
     if @kitten.save
+      flash[:success] = 'Congatulations! Kitten successfully created!'
       redirect_to @kitten
     else
+      flash.now[:error] = 'Fail! Please fix your mistakes.'
       render :new, status: :unprocessable_entity
     end
   end
